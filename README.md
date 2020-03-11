@@ -1,7 +1,7 @@
 # Sistemas-Lincoln
 Sistemas Digitais Lincoln Machado
 
-# https://sites.google.com/site/proflincolnmachado
+https://sites.google.com/site/proflincolnmachado
 
  para adicionar o arquivo do testbench: Settings/EDA Tool Settings/Simulation/NativeLink Settings: Compile test bench -> Test Benches...  New... -> nomeia e seleciona o arquivo .vhd do test bench -> Add -> Ok -> Run Analysis and Synthesis
 
