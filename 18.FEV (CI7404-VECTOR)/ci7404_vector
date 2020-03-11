@@ -1,0 +1,14 @@
+-- PROJETO CI 7404 C/ VECTOR
+-- 18/02/2020
+-- VICTOR RAMALHO
+------------------
+ENTITY ci7404 IS
+PORT(
+            a: IN BIT_VECTOR(5 downto 0);
+            y: OUT BIT_VECTOR(5 downto 0));
+END ci7404;
+
+ARCHITECTURE arch OF ci7404 IS
+BEGIN
+y <= not a;
+END arch;

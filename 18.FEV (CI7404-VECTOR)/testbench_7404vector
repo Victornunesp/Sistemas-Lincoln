@@ -1,0 +1,25 @@
+entity testbench_vector is
+end testbench_vector;
+
+architecture arch of testbench_vector is
+
+
+component ci7404 is
+port(A:in bit_vector(5 downto 0);
+	  Y:out bit_vector(5 downto 0));
+end component;
+
+signal input: bit_vector(5 downto 0);
+signal output: bit_vector(5 downto 0);
+
+begin
+
+dut: ci7404 port map(input,output);
+	
+	input <= "000000",
+				"001010" after 10 ns,
+				"110100" after 20 ns,
+				"111001" after 30 ns,
+				"000000" after 40 ns;
+	
+end arch;
